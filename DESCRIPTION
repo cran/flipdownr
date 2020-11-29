@@ -2,7 +2,7 @@ Package: flipdownr
 Type: Package
 Title: Implement a Countdown in 'RMarkdown' Documents and 'shiny'
         Applications
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c( 
     person("Mohamed El Fodil", "Ihaddaden", email = "ihaddaden.fodeil@gmail.com", role = c("aut", "cre")),
     person("Butcher", "Peter", role = c("ctb", "cph"), comment = "flipdown.js library developer")) 
@@ -13,12 +13,12 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
-Imports: htmltools, glue, jsonlite
+Imports: htmltools, glue, jsonlite, checkmate
 URL: https://github.com/feddelegrand7/flipdownr
 BugReports: https://github.com/feddelegrand7/flipdownr/issues
 NeedsCompilation: no
-Packaged: 2020-10-16 15:01:25 UTC; Administrateur
+Packaged: 2020-11-29 15:16:24 UTC; Administrateur
 Author: Mohamed El Fodil Ihaddaden [aut, cre],
   Butcher Peter [ctb, cph] (flipdown.js library developer)
 Repository: CRAN
-Date/Publication: 2020-10-24 09:20:02 UTC
+Date/Publication: 2020-11-29 15:30:03 UTC

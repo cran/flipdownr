@@ -1,51 +1,101 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# flipdownr
+# flipdownr <a><img src='man/figures/hex.png' align="right" height="200" /></a>
 
 <!-- badges: start -->
 
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/flipdownr)](https://cran.r-project.org/package=flipdownr)
+[![CRAN\_time\_from\_release](https://www.r-pkg.org/badges/ago/flipdownr)](https://cran.r-project.org/package=flipdownr)
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/flipdownr)](https://cran.r-project.org/package=flipdownr)
+[![metacran
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/flipdownr)](https://cran.r-project.org/package=flipdownr)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://choosealicense.com/licenses/mit/)
+[![R
+badge](https://img.shields.io/badge/Build%20with-♥%20and%20R-orange)](https://github.com/feddelegrand7/flipdownr)
 <!-- badges: end -->
 
-The goal of flipdownr is to create a Countdown object within your
+The goal of `flipdownr` is to create a Countdown object within your
 RMarkdown documents and Shiny application. `flipdownr` is an R wrapper
 of the JavaScript library [flipdown](https://pbutcher.uk/flipdown/)
 
+<br>
+
+![](man/figures/bh.gif)
+
 ## Installation
 
-You can install the development version of flipdownr from
-[GITHUB](https://github.com/feddelegrand7/flipdownr) with:
+You can install `flipdownr` from CRAN with:
 
 ``` r
 
-# install.packages("remotes")
+install.packages("flipdownr")
+```
+
+Note that the current CRAN version only offers two themes ‘dark’ and
+‘light’, in order to get the other themes you should install the
+development version from GITHUB with:
+
+``` r
 
 remotes::install_github("feddelegrand7/flipdownr")
 ```
 
 ## Functions and Arguments
 
-  - `flipdownr` has one function: `flipdown` which contains the
-    following arguments:
+> `flipdownr` has one function: `flipdown` which contains the following
+> arguments:
 
-  - `downto`: the targeted date for the countdown. It must have the form
-    of ‘yyyy-mm-dd’ or ‘yyyy-mm-dd hh:mm:ss\`. Note that you can include
-    the time zone (example UTC): ’yyyy-mm-dd hh:mm:ss UTC’;
+>   - `downto`: the targeted date for the countdown. It must have the
+>     form of ‘yyyy-mm-dd’ or ‘yyyy-mm-dd hh:mm:ss\`. Note that you can
+>     include the time zone (example UTC): ’yyyy-mm-dd hh:mm:ss UTC’;
 
-  - `id`: the id of the countdown. Useful when you need to include many
-    countdown objects in one document;
+>   - `id`: the id of the countdown. Useful when you need to include
+>     many countdown objects in one document;
 
-  - `theme`: The theme of the flipdown object. Two possible choices:
-    ‘dark’ or ‘light’. Defaults to ‘dark’
+>   - `theme`: The theme of the flipdown object. For now you can choose
+>     from the following themes (if you have a preference don’t hesitate
+>     to modify the `flipdown.min.css` file and send a PR): ‘dark’,
+>     ‘light’, ‘gdila’, ‘youkous’, ‘ifri’, ‘saida’;
 
-  - `headings`: A character vector pecifying the heading related to each
-    time part. Defaults to English headings: c(“Days”, “Hours”,
-    “Minutes”, “Seconds”).
+>   - `headings`: A character vector specifying the heading related to
+>     each time part. Defaults to English headings: c(“Days”, “Hours”,
+>     “Minutes”, “Seconds”).
 
 ## Examples
 
 A demo is available
 [here](https://ihaddadenfodil.com/post/introducing-the-flipdownr-package-create-a-countdown-in-rmarkdown-documents-and-shiny-apps/)
+
+## Themes
+
+The `dark` and `light` themes are exhibited within the demo above. Below
+you can check out the other themes:
+
+### gdila
+
+-----
+
+![](man/figures/gdila.gif)
+
+### saida
+
+-----
+
+![](man/figures/saida.gif)
+
+### youkous
+
+-----
+
+![](man/figures/youkous.gif)
+
+### ifri
+
+-----
+
+![](man/figures/ifri.gif)
 
 ## Code of Conduct
 
